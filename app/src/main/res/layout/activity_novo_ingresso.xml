@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.root.jefersonguido.cinema.Activity.NovoIngressoActivity"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layoutNovoNome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textSize="15dp"/>
+
+                <EditText
+                    android:id="@+id/novoIngresso_edt_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/novoIngresso_txt_nome"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Nome Ex: Geraldo"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovoTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovoNome"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telefone"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/novoIngresso_edt_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/novoIngresso_txt_telefone"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Telefone Ex: 12345-6789"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovaDataNasc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovoTelefone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_data_nasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data de Nascimento"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/novoIngresso_edt_data_nasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:ems="10"
+                    android:hint="Data de Nasc. 01-01-99"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovoNomeFilme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovaDataNasc"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_nome_filme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filme"
+                    android:textSize="15dp"/>
+
+                <Spinner
+                    android:id="@+id/novoIngresso_spinner_nome_filme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovaSala"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovoNomeFilme"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_name_sala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sala"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_sala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="selecione um filme"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovoAcento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovaSala"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_acento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acento"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"/>
+
+                <Spinner
+                    android:id="@+id/novoIngresso_spinner_acento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovaDataHoraFilme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovoAcento"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/novoIngresso_name_data_hora_filme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data/Hora Filme"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/novoIngresso_txt_data_hora_filme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="selecione um filme"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutNovoValor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layoutNovaDataHoraFilme"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/valor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valor"
+                    android:textSize="15dp"/>
+
+                <Spinner
+                    android:id="@+id/novoIngresso_spinner_valor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutNovoValor"
+                android:text="Gerar Ingresso"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

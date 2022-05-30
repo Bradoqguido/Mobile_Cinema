@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="filmes">
+        <item>Wolverine: Origens - 2D</item>
+        <item>A Origem - 3D</item>
+        <item>Meu malvado Favorito - 2D</item>
+    </array>
+
+    <array name="acento">
+        <item>Fileira 1, Acento 1</item>
+        <item>Fileira 1, acento 2</item>
+        <item>Fileira 1, acento 3</item>
+        <item>Fileira 1, acento 4</item>
+        <item>Fileira 1, acento 5</item>
+        <item>Fileira 2, Acento 1</item>
+        <item>Fileira 2, acento 2</item>
+        <item>Fileira 2, acento 3</item>
+        <item>Fileira 2, acento 4</item>
+        <item>Fileira 2, acento 5</item>
+        <item>Fileira 3, Acento 1</item>
+        <item>Fileira 3, acento 2</item>
+        <item>Fileira 3, acento 3</item>
+        <item>Fileira 3, acento 4</item>
+        <item>Fileira 3, acento 5</item>
+    </array>
+
+    <array name="valor">
+        <item>Inteira R$30.00</item>
+        <item>Estudante R$15.00</item>
+    </array>
+</resources>

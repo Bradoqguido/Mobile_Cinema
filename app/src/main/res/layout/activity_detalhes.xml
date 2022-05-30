@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.root.jefersonguido.cinema.Activity.DetalhesActivity"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/layoutNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:    "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nome"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutNome"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefone:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="telefone"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutData_nascimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutTelefone"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de nascimento:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_data_nascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_nome_filme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutData_nascimento"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filme:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_nome_filme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nomeFilme"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutData_Hora_filme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/layout_nome_filme">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data/Hora:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_data_hora_filme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="data/hora"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutData_Hora_filme"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sala:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_sala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sala"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAcento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/layoutSala">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acento:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_acento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acento"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/layoutAcento">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor:     "
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detalhes_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valor"
+            android:textColor="#0a0a09"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/detalhes_btnvoltar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Voltar" />
+
+        <Button
+            android:id="@+id/detalhes_btnEditar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar" />
+
+        <Button
+            android:id="@+id/detalhes_btnExcluir"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Excluir" />
+    </LinearLayout>
+
+</RelativeLayout>
